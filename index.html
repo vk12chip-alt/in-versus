@@ -22,7 +22,19 @@ header{position:absolute;z-index:10;top:0;left:0;right:0;color:var(--white)}.hea
 footer{background:#102f35;color:#eaf0ed;padding:22px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:22px}.footer-brand{display:flex;align-items:center;gap:10px}.footer-brand img{width:40px;filter:brightness(0) invert(1)}.footer-brand strong{font-size:17px}.footer-brand small{display:block;font-size:8px;letter-spacing:.16em;opacity:.75}.footer-links{display:flex;gap:19px;font-size:11px}.footer-note{font-size:10px;opacity:.7}
 @media(max-width:1000px){.container{width:calc(100% - 48px)}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:122px 8% 42px}.hero-visual{min-height:260px;height:260px}.hero-visual:after{background:linear-gradient(180deg,rgba(23,63,70,.08),transparent)}.hero-caption{bottom:24px;right:7%}.work-top,.articles-layout,.about-grid{grid-template-columns:1fr;gap:18px}.work-text,.about-copy{padding-left:0}.article-grid{margin-top:8px}.cta-inner{align-items:flex-start;flex-direction:column;gap:18px}}
 @media(max-width:620px){.container{width:calc(100% - 36px)}.header-inner{height:96px;align-items:flex-start;flex-direction:column;padding-top:10px;padding-bottom:7px}.brand img{width:41px}.brand-name{font-size:20px}.brand-tag{font-size:7px}.nav{width:100%;gap:18px;max-width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:3px;scrollbar-width:none;font-size:12px}.nav .nav-cta{padding:6px 10px}.hero-copy{padding:120px 20px 32px}.hero h1{font-size:49px}.hero-lead{font-size:14px}.hero-claim{font-size:18px}.hero-visual{min-height:205px;height:205px}.hero-caption{font-size:17px;max-width:205px;bottom:18px}.shape.coral{width:190px;height:190px}.shape.lilac{width:125px;height:125px;right:82px;bottom:42px}.section{padding:42px 0}.work-top{padding-bottom:18px}.work-title,.articles-intro h2,.about h2{font-size:38px}.work-grid,.article-grid{grid-template-columns:1fr}.work-card,.work-card+.work-card{padding:19px 0;border-right:0;border-bottom:1px solid var(--line);min-height:0}.work-card:last-child{border-bottom:0}.article-grid{gap:26px}.article-card{padding-top:12px}.about-copy{font-size:13px}.cta{padding:32px 0}.cta-inner{gap:16px}.cta h2{font-size:37px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:10px 16px}}
-</style>
+
+/* Afstemming op de aangepaste inhoud: tekst behouden, verhoudingen herstellen */
+.work-top h2{font:400 clamp(40px,4.2vw,54px)/.98 var(--serif);letter-spacing:-.04em;margin:13px 0 0;max-width:520px}
+.about-grid>div:first-child{min-width:0}
+.about-portrait{display:block;width:min(200px,100%);height:204px;object-fit:cover;object-position:center;filter:grayscale(1);margin:20px 0}
+@media(max-width:1000px){
+  .hero-copy{padding-left:8%;padding-right:8%}
+  .about-grid{gap:18px}
+}
+@media(max-width:620px){
+  .about-portrait{width:160px;height:164px;margin:14px 0}
+  .work-top h2{font-size:38px}
+}</style>
 </head>
 <body>
 <header><div class="container header-inner">
@@ -69,7 +81,7 @@ footer{background:#102f35;color:#eaf0ed;padding:22px 0}.footer-inner{display:fle
 <section id="over" class="about section">
 <div class="container about-grid">
 <div><div class="eyebrow accent">Over IN VERSUS —</div>
-  <p></p><img src="assets/IMG_8118.jpg" alt="profiel foto" width="200" height="204" style="margin-top: 20px; margin-bottom: 20px;>
+  <img src="assets/IMG_8118.jpg" alt="profiel foto" width="200" height="204" class="about-portrait">
   <h2>Evert Nolta</h2></div>
 <div class="about-copy"><p><b>IN VERSUS</b> is mijn praktijk voor begeleiding, onderzoek en organisatieontwikkeling. Mijn achtergrond ligt in IT, organisatieontwikkeling en begeleidingskunde. Vanuit die combinatie onderzoek ik wat er gebeurt wanneer mensen en organisaties proberen te veranderen.</p><p>Mijn aandacht gaat vaak naar het moment waarop iets niet meer helemaal lijkt te kloppen: wanneer wat we zeggen en wat we doen uiteen lopen, als een patroon blijft terugkeren of een oplossing het probleem vooral opnieuw organiseert.</p><p>Ik vind dat we daar niet te snel overheen moeten stappen. Het zegt iets over wat er onder de oppervlakte speelt en over het systeem waarin we werken. Ik onderzoek samen met anderen wat er onder ligt, welke ideologische aannames het gesprek sturen en welke ruimte ontstaat wanneer we het ongemak serieus nemen</p><a class="about-link" href="over-in-versus.html">Meer over IN VERSUS ↗</a></div>
 </div>
