@@ -57,9 +57,10 @@ footer{background:#102f35;color:#eaf0ed;padding:22px 0}.footer-inner{display:fle
 
 /* Uniforme footer op alle pagina's */
 footer{background:#102f35;color:#eaf0ed;padding:22px 0}
-footer .footer-inner{display:flex;justify-content:center;align-items:center;gap:0;width:100%}
-footer .footer-note{width:100%;font-size:10px;line-height:1.5;opacity:.7;text-align:center}
-@media(max-width:620px){footer .footer-inner{flex-direction:row;align-items:center}footer .footer-note{font-size:9px;padding:0 4px}}
+footer .footer-inner{display:flex;justify-content:center;align-items:center;gap:11px;width:100%;flex-wrap:wrap}
+footer .footer-note{width:auto;max-width:100%;font-size:10px;line-height:1.5;opacity:.7;text-align:center}
+footer .footer-register{display:block;width:auto;height:30px;max-width:100%;object-fit:contain;flex:0 0 auto}
+@media(max-width:620px){footer .footer-inner{flex-direction:row;align-items:center;gap:8px}footer .footer-note{font-size:9px;padding:0 4px}footer .footer-register{height:26px}}
 </style>
 </head>
 <body>
@@ -115,6 +116,6 @@ footer .footer-note{width:100%;font-size:10px;line-height:1.5;opacity:.7;text-al
 
 <section id="contact" class="cta"><div class="container cta-inner"><div><div class="eyebrow">In gesprek? —</div><h2>Laten we onderzoeken wat er speelt.</h2><p>Als je merkt dat iets vastloopt, maar nog niet precies kunt benoemen wat, dan is dat vaak precies het moment waarop mijn werk begint.</p></div><a class="button" href="mailto:evert.nolta@in-versus.nl">Stuur een e-mail ↗</a></div></section>
 </main>
-<footer><div class="container footer-inner"><div class="footer-note">© IN VERSUS - Evert Nolta 2023 | evert.nolta@in-versus.nl | geregistreerd lid van de LVSC | kvk: 90341007</div></div></footer>
+<footer><div class="container footer-inner"><div class="footer-note">© IN VERSUS - Evert Nolta 2023 | evert.nolta@in-versus.nl | geregistreerd lid van de LVSC | kvk: 90341007</div><img class="footer-register" src="assets/Logo%20beroepsregister%20PNG%20transparant.png" alt="LVSC beroepsregister voor professioneel begeleiders"></div></footer>
 </body>
 </html>
